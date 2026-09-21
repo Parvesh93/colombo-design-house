@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SiteEnhancements from "@/components/SiteEnhancements";
 
 const IMAGE_SUIT =
   "https://images.pexels.com/photos/15561776/pexels-photo-15561776.jpeg?auto=compress&cs=tinysrgb&w=1600";
@@ -75,6 +76,7 @@ const leadership = [
 export default function Home() {
   return (
     <main>
+      <SiteEnhancements />
       <header className="site-header">
         <div className="shell nav">
           <a className="brand-logo" href="#home" aria-label="Colombo Design House">
@@ -139,12 +141,12 @@ export default function Home() {
         </div>
 
         <div className="shell hero-content">
-          <div className="hero-meta">
+          <div className="hero-meta hero-animate hero-animate-1">
             <span>Colombo / Sri Lanka</span>
             <span>Established 2018</span>
           </div>
 
-          <div className="hero-copy">
+          <div className="hero-copy hero-animate hero-animate-2">
             <p className="micro-label">Menswear / Fast Fashion / Apparel</p>
             <h1>
               Fashion that
@@ -166,7 +168,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero-caption">
+        <div className="hero-caption hero-animate hero-animate-3">
           <span>01</span>
           <p>Modern menswear. Experienced leadership. Forward thinking.</p>
         </div>
@@ -174,12 +176,12 @@ export default function Home() {
 
       <section id="story" className="intro-section">
         <div className="shell">
-          <div className="section-topline">
+          <div className="section-topline" data-reveal>
             <span>01 / Company</span>
             <p>Built on apparel experience</p>
           </div>
 
-          <div className="intro-grid">
+          <div className="intro-grid" data-reveal data-reveal-delay="80">
             <div className="intro-heading">
               <p className="eyebrow">Since 2018</p>
               <h2>
@@ -208,7 +210,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="image-story-grid">
+          <div className="image-story-grid" data-reveal data-reveal-delay="120">
             <figure className="image-frame image-frame-large">
               <Image
                 src={IMAGE_SUIT}
@@ -245,7 +247,7 @@ export default function Home() {
           <div className="motion-overlay" />
         </div>
 
-        <div className="shell motion-copy">
+        <div className="shell motion-copy" data-reveal>
           <div>
             <p className="micro-label">In motion</p>
             <h2>
@@ -263,19 +265,19 @@ export default function Home() {
 
       <section id="vision" className="vision-section">
         <div className="shell">
-          <div className="section-topline section-topline-light">
+          <div className="section-topline section-topline-light" data-reveal>
             <span>02 / Direction</span>
             <p>Vision & mission</p>
           </div>
 
-          <article className="vision-row">
+          <article className="vision-row" data-reveal data-reveal-delay="60">
             <span className="vision-tag">Vision</span>
             <h2>
               To be the most compelling global clothing &amp; lifestyle brand.
             </h2>
           </article>
 
-          <article className="vision-row mission-row">
+          <article className="vision-row mission-row" data-reveal data-reveal-delay="120">
             <span className="vision-tag">Mission</span>
             <h2>
               To create value through rare and inimitable creativity, and
@@ -287,7 +289,7 @@ export default function Home() {
       </section>
 
       <section className="editorial-break">
-        <div className="editorial-panel editorial-panel-copy">
+        <div className="editorial-panel editorial-panel-copy" data-reveal>
           <div>
             <p className="micro-label">Modern menswear</p>
             <h2>
@@ -301,7 +303,7 @@ export default function Home() {
           </p>
         </div>
 
-        <figure className="editorial-panel editorial-panel-image">
+        <figure className="editorial-panel editorial-panel-image" data-reveal data-reveal-delay="100">
           <Image
             src={IMAGE_STREET}
             alt="Contemporary menswear street style"
@@ -313,7 +315,7 @@ export default function Home() {
 
       <section id="values" className="values-section">
         <div className="shell">
-          <div className="values-head">
+          <div className="values-head" data-reveal>
             <div>
               <div className="section-topline">
                 <span>03 / Culture</span>
@@ -333,7 +335,7 @@ export default function Home() {
 
           <div className="value-cards">
             {values.map((value, index) => (
-              <article key={value} className="value-card">
+              <article key={value} className="value-card" data-reveal data-reveal-delay={String(index * 70)}>
                 <div className="value-card-top">
                   <span>{String(index + 1).padStart(2, "0")}</span>
                   <div className="value-icon">
@@ -348,7 +350,7 @@ export default function Home() {
       </section>
 
       <section className="lookbook-section" aria-label="Menswear visual gallery">
-        <figure className="lookbook-image lookbook-tall">
+        <figure className="lookbook-image lookbook-tall" data-reveal>
           <Image
             src={IMAGE_URBAN}
             alt="Modern urban menswear"
@@ -357,7 +359,7 @@ export default function Home() {
           />
         </figure>
 
-        <div className="lookbook-copy">
+        <div className="lookbook-copy" data-reveal data-reveal-delay="80">
           <span>CDH / 2018 — Present</span>
           <h2>
             Clothing with a
@@ -369,7 +371,7 @@ export default function Home() {
           </p>
         </div>
 
-        <figure className="lookbook-image lookbook-detail">
+        <figure className="lookbook-image lookbook-detail" data-reveal data-reveal-delay="140">
           <Image
             src={IMAGE_EDITORIAL}
             alt="Monochrome menswear editorial"
@@ -381,7 +383,7 @@ export default function Home() {
 
       <section id="leadership" className="leadership-section">
         <div className="shell">
-          <div className="leadership-head">
+          <div className="leadership-head" data-reveal>
             <div className="section-topline">
               <span>04 / People</span>
               <p>Management team</p>
@@ -390,7 +392,7 @@ export default function Home() {
           </div>
 
           <div className="leadership-layout">
-            <figure className="leadership-visual">
+            <figure className="leadership-visual" data-reveal>
               <Image
                 src={IMAGE_URBAN}
                 alt="Contemporary menswear visual"
@@ -405,7 +407,7 @@ export default function Home() {
 
             <div className="leadership-cards">
               {leadership.map((person, index) => (
-                <article className="leader-card" key={person.role}>
+                <article className="leader-card" key={person.role} data-reveal data-reveal-delay={String(index * 70)}>
                   <div className="leader-card-top">
                     <span>{String(index + 1).padStart(2, "0")}</span>
                     <Image
@@ -438,7 +440,7 @@ export default function Home() {
           <div className="contact-image-shade" />
         </div>
 
-        <div className="shell contact-content">
+        <div className="shell contact-content" data-reveal>
           <p className="micro-label">Colombo Design House</p>
           <h2>
             Let&apos;s create
