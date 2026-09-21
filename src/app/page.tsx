@@ -30,9 +30,24 @@ export default function Home() {
     <main>
       <header className="site-header">
         <div className="shell nav">
-          <a className="wordmark" href="#home" aria-label="Colombo Design House">
-            <strong>CDH</strong>
-            <span>Colombo Design House</span>
+          <a className="brand-logo" href="#home" aria-label="Colombo Design House">
+            <Image
+              className="brand-logo-full"
+              src="/logo/cdh-logo-white.png"
+              alt="Colombo Design House"
+              width={320}
+              height={110}
+              priority
+            />
+            <Image
+              className="brand-logo-mark"
+              src="/logo/cdh-monogram-white.png"
+              alt=""
+              width={88}
+              height={88}
+              priority
+              aria-hidden="true"
+            />
           </a>
 
           <nav className="nav-links" aria-label="Primary navigation">
@@ -67,7 +82,13 @@ export default function Home() {
         <div className="hero-rule hero-rule-two" />
 
         <div className="hero-giant" aria-hidden="true">
-          CDH
+          <Image
+            src="/logo/cdh-monogram-white.png"
+            alt=""
+            fill
+            sizes="50vw"
+            priority
+          />
         </div>
 
         <div className="shell hero-content">
@@ -366,7 +387,14 @@ export default function Home() {
 
       <footer className="site-footer">
         <div className="shell footer-grid">
-          <div className="footer-mark">CDH</div>
+          <a className="footer-logo" href="#home" aria-label="Colombo Design House">
+            <Image
+              src="/logo/cdh-logo-white.png"
+              alt="Colombo Design House"
+              width={240}
+              height={82}
+            />
+          </a>
           <p>Colombo Design House (Pvt) Ltd.</p>
           <p>© {new Date().getFullYear()} All rights reserved.</p>
           <a href="#home">Back to top ↑</a>
