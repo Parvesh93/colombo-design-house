@@ -1,69 +1,172 @@
-import Image from "next/image";
+const services = [
+  {
+    number: "01",
+    title: "Service One",
+    description: "Service details will be added when the approved company content is shared.",
+  },
+  {
+    number: "02",
+    title: "Service Two",
+    description: "Service details will be added when the approved company content is shared.",
+  },
+  {
+    number: "03",
+    title: "Service Three",
+    description: "Service details will be added when the approved company content is shared.",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
+    <main>
+      <header className="site-header">
+        <div className="shell nav-wrap">
+          <a className="brand" href="#home" aria-label="Colombo Design House home">
+            <span className="brand-mark">CDH</span>
+            <span className="brand-copy">
+              <strong>Colombo</strong>
+              <span>Design House</span>
+            </span>
+          </a>
+
+          <nav className="desktop-nav" aria-label="Primary navigation">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <a className="nav-cta" href="#contact">
+            Get in touch
+          </a>
+        </div>
+      </header>
+
+      <section id="home" className="hero">
+        <div className="hero-orbit hero-orbit-one" />
+        <div className="hero-orbit hero-orbit-two" />
+        <div className="hero-grid" />
+
+        <div className="shell hero-inner">
+          <p className="eyebrow light">Colombo Design House</p>
+
+          <h1>
+            Thoughtful design.
+            <span>Built with purpose.</span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+
+          <div className="hero-bottom">
+            <p>
+              A modern digital presence for Colombo Design House. Final company
+              messaging and detailed service content will be incorporated as the
+              project develops.
+            </p>
+
+            <a className="button button-light" href="#about">
+              Discover more <span aria-hidden="true">↗</span>
+            </a>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section id="about" className="section section-white">
+        <div className="shell split">
+          <div>
+            <p className="eyebrow">About us</p>
+          </div>
+
+          <div>
+            <h2>Professional, clear and considered.</h2>
+            <p className="lead">
+              Colombo Design House is being presented with a clean, modern
+              identity built around the company&apos;s deep green brand palette.
+              This section is ready for the approved company profile once it is
+              supplied.
+            </p>
+
+            <div className="about-line">
+              <span>01</span>
+              <p>Modern visual language</p>
+            </div>
+            <div className="about-line">
+              <span>02</span>
+              <p>Clear information hierarchy</p>
+            </div>
+            <div className="about-line">
+              <span>03</span>
+              <p>Responsive by default</p>
+            </div>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section id="services" className="section section-soft">
+        <div className="shell">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">What we do</p>
+              <h2>Our services</h2>
+            </div>
+            <p>
+              This area is intentionally structured so approved service content
+              can be dropped in without redesigning the page.
+            </p>
+          </div>
+
+          <div className="service-list">
+            {services.map((service) => (
+              <article className="service-row" key={service.number}>
+                <span>{service.number}</span>
+                <div>
+                  <h3>{service.title}</h3>
+                  <p>{service.description}</p>
+                </div>
+                <span className="service-arrow" aria-hidden="true">↗</span>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="contact">
+        <div className="shell contact-grid">
+          <div>
+            <p className="eyebrow light">Contact</p>
+            <h2>Let&apos;s start a conversation.</h2>
+          </div>
+
+          <div className="contact-details">
+            <div>
+              <span>Contact person</span>
+              <strong>Nuwan Samarakkody</strong>
+              <p>Director: Sales and Operations</p>
+            </div>
+
+            <div>
+              <span>Telephone</span>
+              <a href="tel:+94112562018">+94 11 256 2018</a>
+            </div>
+
+            <div>
+              <span>Mobile</span>
+              <a href="tel:+94778875181">+94 77 887 5181</a>
+            </div>
+
+            <div>
+              <span>Email</span>
+              <a href="mailto:nuwan@ariyainternational.com">
+                nuwan@ariyainternational.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer className="footer">
+        <div className="shell footer-inner">
+          <p>© 2026 Colombo Design House (Pvt) Ltd.</p>
+          <a href="#home">Back to top ↑</a>
+        </div>
+      </footer>
+    </main>
   );
 }
