@@ -18,6 +18,53 @@ const values = [
   "Mutual Respect",
 ];
 
+function ValueIcon({ index }: { index: number }) {
+  const common = {
+    width: 28,
+    height: 28,
+    viewBox: "0 0 28 28",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    "aria-hidden": true,
+  };
+
+  if (index === 0) {
+    return (
+      <svg {...common}>
+        <circle cx="14" cy="8" r="3.5" stroke="currentColor" strokeWidth="1.35" />
+        <path d="M7.5 22.5c.8-5 3.1-7.5 6.5-7.5s5.7 2.5 6.5 7.5" stroke="currentColor" strokeWidth="1.35" strokeLinecap="round" />
+        <path d="M5 13.5h4M19 13.5h4" stroke="currentColor" strokeWidth="1.35" strokeLinecap="round" />
+      </svg>
+    );
+  }
+
+  if (index === 1) {
+    return (
+      <svg {...common}>
+        <path d="M14 3.5l2.15 7.35L23.5 13l-7.35 2.15L14 22.5l-2.15-7.35L4.5 13l7.35-2.15L14 3.5Z" stroke="currentColor" strokeWidth="1.35" strokeLinejoin="round" />
+        <path d="M22 5.5v4M24 7.5h-4" stroke="currentColor" strokeWidth="1.35" strokeLinecap="round" />
+      </svg>
+    );
+  }
+
+  if (index === 2) {
+    return (
+      <svg {...common}>
+        <path d="M14 3.5 22 7v6.1c0 5.05-3.3 9.25-8 11.4-4.7-2.15-8-6.35-8-11.4V7l8-3.5Z" stroke="currentColor" strokeWidth="1.35" strokeLinejoin="round" />
+        <path d="m10 14 2.5 2.5 5-5" stroke="currentColor" strokeWidth="1.35" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    );
+  }
+
+  return (
+    <svg {...common}>
+      <circle cx="9" cy="9" r="3" stroke="currentColor" strokeWidth="1.35" />
+      <circle cx="19" cy="9" r="3" stroke="currentColor" strokeWidth="1.35" />
+      <path d="M3.5 21c.65-4.25 2.5-6.4 5.5-6.4 2.45 0 4.05 1.45 5 4.25.95-2.8 2.55-4.25 5-4.25 3 0 4.85 2.15 5.5 6.4" stroke="currentColor" strokeWidth="1.35" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 const leadership = [
   { role: "Chairman", name: "R.P Ariyarathna Samarakkody" },
   { role: "Director", name: "R.P Nuwan Samarakkody" },
@@ -111,9 +158,9 @@ export default function Home() {
                 global ambition.
               </p>
 
-              <a className="circle-button" href="#story">
-                <span>Explore</span>
-                <i>↓</i>
+              <a className="hero-explore" href="#story">
+                <span>Explore the story</span>
+                <i aria-hidden="true">↓</i>
               </a>
             </div>
           </div>
@@ -284,12 +331,16 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="values-list">
+          <div className="value-cards">
             {values.map((value, index) => (
-              <article key={value} className="value-line">
-                <span>{String(index + 1).padStart(2, "0")}</span>
+              <article key={value} className="value-card">
+                <div className="value-card-top">
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <div className="value-icon">
+                    <ValueIcon index={index} />
+                  </div>
+                </div>
                 <h3>{value}</h3>
-                <i>↗</i>
               </article>
             ))}
           </div>
@@ -335,17 +386,43 @@ export default function Home() {
               <span>04 / People</span>
               <p>Management team</p>
             </div>
-            <h2>Leadership behind the vision.</h2>
+            <h2>People behind the vision.</h2>
           </div>
 
-          <div className="leadership-list">
-            {leadership.map((person, index) => (
-              <article className="leader-row" key={person.role}>
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <p>{person.role}</p>
-                <h3>{person.name}</h3>
-              </article>
-            ))}
+          <div className="leadership-layout">
+            <figure className="leadership-visual">
+              <Image
+                src={IMAGE_URBAN}
+                alt="Contemporary menswear visual"
+                fill
+                sizes="(max-width: 800px) 100vw, 42vw"
+              />
+              <figcaption>
+                <span>CDH / People &amp; Purpose</span>
+                <strong>Experience. Direction. Growth.</strong>
+              </figcaption>
+            </figure>
+
+            <div className="leadership-cards">
+              {leadership.map((person, index) => (
+                <article className="leader-card" key={person.role}>
+                  <div className="leader-card-top">
+                    <span>{String(index + 1).padStart(2, "0")}</span>
+                    <Image
+                      src="/logo/cdh-monogram-dark.png"
+                      alt=""
+                      width={34}
+                      height={34}
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <div>
+                    <p>{person.role}</p>
+                    <h3>{person.name}</h3>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
