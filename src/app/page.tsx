@@ -141,12 +141,7 @@ export default function Home() {
         </div>
 
         <div className="shell hero-content">
-          <div className="hero-meta hero-animate hero-animate-1">
-            <span>Colombo / Sri Lanka</span>
-            <span>Established 2018</span>
-          </div>
-
-          <div className="hero-copy hero-animate hero-animate-2">
+          <div className="hero-copy hero-animate hero-animate-1">
             <p className="micro-label">Menswear / Fast Fashion / Apparel</p>
             <h1>
               Fashion that
@@ -168,7 +163,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero-caption hero-animate hero-animate-3">
+        <div className="hero-caption hero-animate hero-animate-2">
           <span>01</span>
           <p>Modern menswear. Experienced leadership. Forward thinking.</p>
         </div>
