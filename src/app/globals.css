@@ -1214,9 +1214,8 @@ img, video { display: block; }
   animation: heroReveal .9s cubic-bezier(.2,.8,.2,1) forwards;
 }
 
-.hero-animate-1 { animation-delay: .18s; }
-.hero-animate-2 { animation-delay: .34s; }
-.hero-animate-3 { animation-delay: .58s; }
+.hero-animate-1 { animation-delay: .2s; }
+.hero-animate-2 { animation-delay: .48s; }
 
 @keyframes heroReveal {
   to {
@@ -1284,10 +1283,11 @@ img, video { display: block; }
 }
 
 .whatsapp-widget svg {
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
   position: relative;
   z-index: 2;
+  display: block;
 }
 
 .whatsapp-pulse {
@@ -1348,8 +1348,8 @@ img, video { display: block; }
   }
 
   .whatsapp-widget svg {
-    width: 26px;
-    height: 26px;
+    width: 21px;
+    height: 21px;
   }
 
   .whatsapp-tooltip {
