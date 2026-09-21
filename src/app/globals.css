@@ -758,8 +758,11 @@ img, video { display: block; }
 
   .site-header { border-bottom-color:rgba(255,255,255,.13); }
   .nav { min-height:76px; }
-  .brand-logo-full { display:none; }
-  .brand-logo-mark { display:block; }
+  .brand-logo-full {
+    display:block;
+    height:38px;
+  }
+  .brand-logo-mark { display:none; }
   .nav-contact { gap:12px; padding:9px 12px; }
 
   .hero-content { padding-top:112px; padding-bottom:48px; }
