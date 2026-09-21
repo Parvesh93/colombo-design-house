@@ -50,26 +50,23 @@ img, video { display: block; }
   gap: 36px;
 }
 
-.wordmark {
-  display: flex;
+.brand-logo {
+  display: inline-flex;
   align-items: center;
-  gap: 14px;
   width: fit-content;
 }
 
-.wordmark strong {
-  font-size: 24px;
-  letter-spacing: -.06em;
+.brand-logo-full {
+  width: auto;
+  height: 54px;
+  object-fit: contain;
 }
 
-.wordmark span {
-  max-width: 74px;
-  font-size: 8px;
-  font-weight: 800;
-  line-height: 1.25;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  opacity: .62;
+.brand-logo-mark {
+  display: none;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -144,12 +141,14 @@ img, video { display: block; }
   top: 49%;
   transform: translate(-50%,-50%);
   z-index: 1;
-  font-size: clamp(180px, 34vw, 520px);
-  line-height: .72;
-  font-weight: 900;
-  letter-spacing: -.09em;
-  color: rgba(255,255,255,.13);
-  white-space: nowrap;
+  width: min(46vw, 660px);
+  aspect-ratio: 1;
+  opacity: .16;
+  pointer-events: none;
+}
+
+.hero-giant img {
+  object-fit: contain;
 }
 
 .hero-content {
@@ -706,16 +705,15 @@ img, video { display: block; }
   font-size:9px;
 }
 
-.footer-mark {
-  width:44px;
-  height:44px;
-  border:1px solid rgba(255,255,255,.2);
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  color:#fff;
-  font-size:9px;
-  font-weight:800;
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: auto;
+  height: 42px;
+  object-fit: contain;
 }
 
 .footer-grid p { margin:0; }
@@ -725,7 +723,7 @@ img, video { display: block; }
   .nav-links { display:none; }
 
   .hero-caption { display:none; }
-  .hero-giant { font-size:40vw; }
+  .hero-giant { width:min(58vw, 560px); }
 
   .intro-grid,
   .values-head,
@@ -760,10 +758,12 @@ img, video { display: block; }
 
   .site-header { border-bottom-color:rgba(255,255,255,.13); }
   .nav { min-height:76px; }
-  .wordmark span { display:none; }
+  .brand-logo-full { display:none; }
+  .brand-logo-mark { display:block; }
   .nav-contact { gap:12px; padding:9px 12px; }
 
   .hero-content { padding-top:112px; padding-bottom:48px; }
+  .hero-giant { width:min(72vw, 420px); opacity:.14; }
   .hero-meta { font-size:7px; }
   .hero-copy h1 { font-size:clamp(56px,17vw,84px); }
   .hero-bottom { align-items:flex-start; flex-direction:column; gap:26px; }
