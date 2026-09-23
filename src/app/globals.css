@@ -3892,3 +3892,152 @@ body.is-loading {
     font-size: 16px;
   }
 }
+
+
+/* ---- Capability grid + global heading spacing refinement ---- */
+
+.final-home .capability-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.final-home .capability-card {
+  min-height: 260px;
+  padding: 24px;
+  background: #f8f7f3;
+}
+
+.final-home .capability-card:nth-child(even) {
+  background: #e9ede9;
+}
+
+.final-home .capability-card:hover {
+  background: var(--green);
+}
+
+.final-home .capability-card h3 {
+  font-size: clamp(21px, 1.7vw, 28px);
+  line-height: 1.08;
+}
+
+.final-home .capability-card p {
+  font-size: 10px;
+  line-height: 1.65;
+}
+
+/* Keep eyebrow / label text visually separate from large display titles */
+.final-home .micro-label {
+  margin-bottom: 18px;
+}
+
+.final-home .final-section-label {
+  margin-bottom: 28px;
+}
+
+.final-home .final-section-label + h2,
+.final-home .final-section-label + div > h2 {
+  margin-top: 0;
+}
+
+.final-home .final-facilities-head h2 + p,
+.final-home .final-brands-head h2 + p,
+.final-home .final-new-factory-copy h2 + p,
+.final-home .final-people-copy h2 + p,
+.final-home .final-contact h2 + p,
+.final-home .final-closing h2 + p {
+  margin-top: 22px;
+}
+
+.final-home .final-contact-grid > div:first-child > p:last-child {
+  margin-top: 18px;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.final-home .final-closing-inner > p:not(.micro-label) {
+  margin-top: 26px;
+}
+
+.final-home .final-people-copy .final-lead {
+  margin-top: 26px;
+}
+
+.final-home .final-capabilities-head > p,
+.final-home .final-responsibility-head > p,
+.final-home .final-difference-head > p,
+.final-home .final-vision-head > p {
+  padding-top: 8px;
+}
+
+@media (max-width: 980px) {
+  .final-home .capability-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .final-home .capability-card {
+    min-height: 225px;
+  }
+}
+
+@media (max-width: 720px) {
+  .final-home .capability-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .final-home .capability-card {
+    min-height: 185px;
+    padding: 15px;
+  }
+
+  .final-home .capability-card h3 {
+    font-size: 17px;
+    line-height: 1.1;
+  }
+
+  .final-home .capability-card p {
+    font-size: 8.5px;
+    line-height: 1.55;
+  }
+
+  .final-home .capability-card:nth-child(1),
+  .final-home .capability-card:nth-child(4) {
+    background: #f8f7f3;
+  }
+
+  .final-home .capability-card:nth-child(2),
+  .final-home .capability-card:nth-child(3) {
+    background: #e9ede9;
+  }
+
+  .final-home .capability-card:hover {
+    background: var(--green);
+  }
+
+  .final-home .micro-label {
+    margin-bottom: 14px;
+  }
+
+  .final-home .final-section-label {
+    margin-bottom: 20px;
+  }
+
+  .final-home .final-facilities-head h2 + p,
+  .final-home .final-brands-head h2 + p,
+  .final-home .final-new-factory-copy h2 + p,
+  .final-home .final-people-copy h2 + p,
+  .final-home .final-contact h2 + p,
+  .final-home .final-closing h2 + p {
+    margin-top: 17px;
+  }
+
+  .final-home .final-contact-grid > div:first-child > p:last-child {
+    margin-top: 16px;
+  }
+
+  .final-home .final-closing-inner > p:not(.micro-label) {
+    margin-top: 20px;
+  }
+
+  .final-home .final-people-copy .final-lead {
+    margin-top: 20px;
+  }
+}
