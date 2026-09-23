@@ -3731,3 +3731,164 @@ body.is-loading {
     font-size: 8px;
   }
 }
+
+
+/* ---- Final typography refinement: smaller, tighter section titles ---- */
+
+.final-hero-copy h1 {
+  font-size: clamp(50px, 6.5vw, 96px);
+  line-height: .92;
+}
+
+.final-about h2,
+.final-capabilities h2,
+.final-facilities h2,
+.final-responsibility h2,
+.final-brands h2,
+.final-difference h2,
+.final-global h2,
+.final-new-factory h2,
+.final-people h2,
+.final-vision h2,
+.final-closing h2 {
+  font-size: clamp(38px, 4.35vw, 64px);
+  line-height: 1.01;
+}
+
+.final-contact h2 {
+  font-size: clamp(40px, 4.8vw, 70px);
+  line-height: 1.01;
+}
+
+.final-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.final-difference,
+.final-global,
+.final-vision,
+.final-contact {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.final-closing {
+  padding-top: 105px;
+  padding-bottom: 105px;
+}
+
+.final-section-label {
+  margin-bottom: 32px;
+}
+
+.final-capabilities-head,
+.final-responsibility-head {
+  margin-bottom: 46px;
+}
+
+.final-facilities-head,
+.final-brands-head {
+  margin-bottom: 48px;
+}
+
+.final-difference-head {
+  margin-bottom: 52px;
+}
+
+.capability-card h3 {
+  font-size: clamp(24px, 2.2vw, 34px);
+}
+
+.facility-grid h3 {
+  font-size: clamp(23px, 2.1vw, 32px);
+}
+
+.brand-grid h3 {
+  font-size: clamp(32px, 3.2vw, 46px);
+}
+
+.responsibility-grid h3 {
+  font-size: 20px;
+}
+
+.vision-grid p {
+  font-size: 19px;
+}
+
+@media (max-width: 720px) {
+  .final-hero-copy h1 {
+    font-size: clamp(44px, 12.5vw, 60px);
+    line-height: .94;
+  }
+
+  .final-about h2,
+  .final-capabilities h2,
+  .final-facilities h2,
+  .final-responsibility h2,
+  .final-brands h2,
+  .final-difference h2,
+  .final-global h2,
+  .final-new-factory h2,
+  .final-people h2,
+  .final-vision h2,
+  .final-closing h2 {
+    font-size: 36px;
+    line-height: 1.02;
+  }
+
+  .final-contact h2 {
+    font-size: 38px;
+    line-height: 1.03;
+  }
+
+  .final-section {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+
+  .final-difference,
+  .final-global,
+  .final-vision,
+  .final-contact {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+
+  .final-closing {
+    padding-top: 76px;
+    padding-bottom: 76px;
+  }
+
+  .final-section-label {
+    margin-bottom: 24px;
+  }
+
+  .final-capabilities-head,
+  .final-responsibility-head,
+  .final-facilities-head,
+  .final-brands-head,
+  .final-difference-head {
+    margin-bottom: 34px;
+  }
+
+  .capability-card h3 {
+    font-size: 18px;
+  }
+
+  .facility-grid h3 {
+    font-size: 25px;
+  }
+
+  .brand-grid h3 {
+    font-size: 27px;
+  }
+
+  .responsibility-grid h3 {
+    font-size: 16px;
+  }
+
+  .vision-grid p {
+    font-size: 16px;
+  }
+}
