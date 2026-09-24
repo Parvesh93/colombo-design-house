@@ -93,7 +93,12 @@ function LineIcon({
     return (
       <svg {...common}>
         <circle cx="16" cy="16" r="5" stroke="currentColor" strokeWidth="1.4" />
-        <path d="M16 3v4M16 25v4M3 16h4M25 16h4M6.8 6.8l2.8 2.8M22.4 22.4l2.8 2.8M25.2 6.8l-2.8 2.8M9.6 22.4l-2.8 2.8" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+        <path
+          d="M16 3v4M16 25v4M3 16h4M25 16h4M6.8 6.8l2.8 2.8M22.4 22.4l2.8 2.8M25.2 6.8l-2.8 2.8M9.6 22.4l-2.8 2.8"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+        />
       </svg>
     );
   }
@@ -101,8 +106,18 @@ function LineIcon({
   if (type === "water") {
     return (
       <svg {...common}>
-        <path d="M16 3.5S9 12.2 9 18a7 7 0 0 0 14 0c0-5.8-7-14.5-7-14.5Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" />
-        <path d="M12.3 19.3c.5 2 1.8 3.2 3.7 3.6" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+        <path
+          d="M16 3.5S9 12.2 9 18a7 7 0 0 0 14 0c0-5.8-7-14.5-7-14.5Z"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M12.3 19.3c.5 2 1.8 3.2 3.7 3.6"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+        />
       </svg>
     );
   }
@@ -111,7 +126,12 @@ function LineIcon({
     return (
       <svg {...common}>
         <circle cx="16" cy="16" r="4.2" stroke="currentColor" strokeWidth="1.4" />
-        <path d="M16 3.5v3M16 25.5v3M3.5 16h3M25.5 16h3M7.2 7.2l2.1 2.1M22.7 22.7l2.1 2.1M24.8 7.2l-2.1 2.1M9.3 22.7l-2.1 2.1" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+        <path
+          d="M16 3.5v3M16 25.5v3M3.5 16h3M25.5 16h3M7.2 7.2l2.1 2.1M22.7 22.7l2.1 2.1M24.8 7.2l-2.1 2.1M9.3 22.7l-2.1 2.1"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+        />
         <circle cx="16" cy="16" r="9.2" stroke="currentColor" strokeWidth="1.4" />
       </svg>
     );
@@ -120,27 +140,95 @@ function LineIcon({
   if (type === "shield") {
     return (
       <svg {...common}>
-        <path d="M16 3.8 25 7v7c0 6-3.8 10.8-9 13.2C10.8 24.8 7 20 7 14V7l9-3.2Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" />
-        <path d="m11.8 15.7 2.7 2.7 5.8-6" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+        <path
+          d="M16 3.8 25 7v7c0 6-3.8 10.8-9 13.2C10.8 24.8 7 20 7 14V7l9-3.2Z"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinejoin="round"
+        />
+        <path
+          d="m11.8 15.7 2.7 2.7 5.8-6"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </svg>
     );
   }
 
-  if (type === "essentials") {
+  if (type === "shirt") {
     return (
       <svg {...common}>
-        <path d="M9 6.5h14l-1.2 19H10.2L9 6.5Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" />
-        <path d="M11.5 10.5h9M16 10.5v15" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+        <path
+          d="M10.8 7.5 16 5l5.2 2.5 4 5-3.3 2.4-1.2-1.8V27h-9.4V13.1l-1.2 1.8-3.3-2.4 4-5Z"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M13.2 8.3 16 10.5l2.8-2.2M16 10.5V27M14.8 14h2.4M14.8 17.5h2.4M14.8 21h2.4"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+        />
       </svg>
     );
   }
 
-  const female = type === "ladies";
+  if (type === "casual") {
+    return (
+      <svg {...common}>
+        <path
+          d="M11.5 8.1 14 6.5h4l2.5 1.6 3.6 2.7-2 3.1-3.1-1.7V26h-6V12.2l-3.1 1.7-2-3.1 3.6-2.7Z"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M14.2 6.8c.4 1.2 1 1.8 1.8 1.8s1.4-.6 1.8-1.8"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+        />
+      </svg>
+    );
+  }
+
+  if (type === "ladies") {
+    return (
+      <svg {...common}>
+        <path
+          d="M12 7.3 16 5l4 2.3 4 4.8-2.9 2.6-1.5-1.7V27h-7.2V13l-1.5 1.7L8 12.1l4-4.8Z"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M13.7 8.1c.5 1.1 1.2 1.7 2.3 1.7s1.8-.6 2.3-1.7M14.5 14h3"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+        />
+      </svg>
+    );
+  }
 
   return (
     <svg {...common}>
-      <path d={female ? "M11 7.2 16 5l5 2.2 4 5.3-3.3 2.4-.9-1.6V27H11.2V13.3l-.9 1.6L7 12.5l4-5.3Z" : "M10.5 7.3 16 5l5.5 2.3 4.2 5.4-3.6 2.5-1.2-1.9V27H11.1V13.3L9.9 15.2l-3.6-2.5 4.2-5.4Z"} stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" />
-      <path d={type === "casual" ? "M12 8.2c1 1.2 2.3 1.8 4 1.8s3-.6 4-1.8M16 10v17" : "M13 8.1c.7 1.2 1.7 1.8 3 1.8s2.3-.6 3-1.8M16 10v17"} stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+      <path
+        d="M9.5 8.5h13l-1.1 12.7c-.1 1.7-1.4 2.8-3 2.8h-4.8c-1.6 0-2.9-1.1-3-2.8L9.5 8.5Z"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M9.8 12h12.4M13.2 24l1.2-6h3.2l1.2 6"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
