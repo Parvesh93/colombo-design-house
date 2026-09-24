@@ -4294,3 +4294,10 @@ body.is-loading {
     min-height: 390px;
   }
 }
+
+
+/* ---- Premium monochrome about image ---- */
+.final-home .final-about-media img {
+  filter: grayscale(1) contrast(1.06);
+  object-position: center 38%;
+}
