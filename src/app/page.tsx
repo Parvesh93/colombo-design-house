@@ -9,6 +9,8 @@ const IMAGE_CRAFT =
   "https://images.pexels.com/photos/5526370/pexels-photo-5526370.jpeg?auto=compress&cs=tinysrgb&w=1800";
 const IMAGE_MENSWEAR =
   "https://images.pexels.com/photos/30148716/pexels-photo-30148716.jpeg?auto=compress&cs=tinysrgb&w=1800";
+const IMAGE_GLOBAL_MENSWEAR =
+  "https://images.pexels.com/photos/18749982/pexels-photo-18749982.jpeg?auto=compress&cs=tinysrgb&w=1800";
 
 const capabilities = [
   {
@@ -495,23 +497,33 @@ export default function Home() {
             <p>From manufacturer to global brand</p>
           </div>
 
-          <div className="final-global-grid">
-            <div data-reveal>
-              <h2>Smaller runs.<em>Bigger possibilities.</em></h2>
-            </div>
+          <div className="final-global-editorial">
+            <figure className="final-global-media" data-reveal>
+              <Image
+                src={IMAGE_GLOBAL_MENSWEAR}
+                alt="Premium black and white menswear editorial"
+                fill
+                sizes="(max-width: 900px) 100vw, 42vw"
+              />
+              <figcaption>Menswear / Global ambition / Modern tailoring</figcaption>
+            </figure>
 
-            <div className="final-global-copy" data-reveal data-reveal-delay="80">
-              <p>
-                The global apparel market is changing. Buyers want quality,
-                flexibility, responsible production and the ability to move with
-                changing tastes.
-              </p>
-              <p>That&apos;s where we see our opportunity.</p>
-              <p>
-                Our new facility will strengthen our design capabilities, trend
-                forecasting and production capacity — enabling us to serve more
-                international buyers while continuing to build our own brands.
-              </p>
+            <div className="final-global-content" data-reveal data-reveal-delay="80">
+              <h2>Smaller runs.<em>Bigger possibilities.</em></h2>
+
+              <div className="final-global-copy">
+                <p>
+                  The global apparel market is changing. Buyers want quality,
+                  flexibility, responsible production and the ability to move with
+                  changing tastes.
+                </p>
+                <p>That&apos;s where we see our opportunity.</p>
+                <p>
+                  Our new facility will strengthen our design capabilities, trend
+                  forecasting and production capacity — enabling us to serve more
+                  international buyers while continuing to build our own brands.
+                </p>
+              </div>
             </div>
           </div>
 
