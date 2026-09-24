@@ -3,18 +3,12 @@ import SiteEnhancements from "@/components/SiteEnhancements";
 
 const HERO_VIDEO =
   "https://videos.pexels.com/video-files/6627028/6627028-uhd_4096_2160_25fps.mp4";
-const IMAGE_SUIT =
-  "https://images.pexels.com/photos/15561776/pexels-photo-15561776.jpeg?auto=compress&cs=tinysrgb&w=1800";
-const IMAGE_EDITORIAL =
-  "https://images.pexels.com/photos/15529124/pexels-photo-15529124.jpeg?auto=compress&cs=tinysrgb&w=1600";
 const IMAGE_FACTORY =
-  "https://images.pexels.com/photos/31019576/pexels-photo-31019576/free-photo-of-industrial-textile-factory-with-workers-at-sewing-machines.jpeg?auto=compress&dpr=1&w=1800";
-const IMAGE_WORKER =
-  "https://images.pexels.com/photos/31212954/pexels-photo-31212954.jpeg?cs=srgb&fm=jpg&w=1400";
-const IMAGE_FABRIC =
-  "https://images.pexels.com/photos/31091534/pexels-photo-31091534.jpeg?cs=srgb&fm=jpg&w=1400";
-const IMAGE_SOLAR =
-  "https://images.pexels.com/photos/35454189/pexels-photo-35454189/free-photo-of-aerial-view-of-solar-panels-on-industrial-roof.jpeg?auto=compress&dpr=1&w=1800";
+  "https://images.pexels.com/photos/31030917/pexels-photo-31030917.jpeg?auto=compress&cs=tinysrgb&w=1800";
+const IMAGE_CRAFT =
+  "https://images.pexels.com/photos/5526370/pexels-photo-5526370.jpeg?auto=compress&cs=tinysrgb&w=1800";
+const IMAGE_MENSWEAR =
+  "https://images.pexels.com/photos/30148716/pexels-photo-30148716.jpeg?auto=compress&cs=tinysrgb&w=1800";
 
 const capabilities = [
   {
@@ -305,27 +299,6 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="capability-media-row" data-reveal>
-            <figure>
-              <Image
-                src={IMAGE_WORKER}
-                alt="Skilled garment worker operating a sewing machine"
-                fill
-                sizes="(max-width: 720px) 50vw, 42vw"
-              />
-              <figcaption>Skilled production</figcaption>
-            </figure>
-            <figure>
-              <Image
-                src={IMAGE_FABRIC}
-                alt="Textile production and fabric handling in a garment factory"
-                fill
-                sizes="(max-width: 720px) 50vw, 42vw"
-              />
-              <figcaption>Quality at every stage</figcaption>
-            </figure>
-          </div>
-
           <a className="final-section-cta" href="#facilities" data-reveal>
             Explore Our Capabilities <span>↗</span>
           </a>
@@ -392,16 +365,6 @@ export default function Home() {
             </p>
           </div>
 
-          <figure className="facility-media" data-reveal>
-            <Image
-              src={IMAGE_FACTORY}
-              alt="Organised garment production facility"
-              fill
-              sizes="100vw"
-            />
-            <figcaption>Manufacturing network / Sri Lanka</figcaption>
-          </figure>
-
           <div className="facility-grid">
             <article data-reveal>
               <span>01 / Malabe</span>
@@ -430,8 +393,8 @@ export default function Home() {
       <section className="final-new-factory">
         <div className="final-new-factory-media">
           <Image
-            src={IMAGE_SUIT}
-            alt="Modern apparel and manufacturing direction"
+            src={IMAGE_CRAFT}
+            alt="Skilled garment craftsmanship and sewing production"
             fill
             sizes="(max-width: 900px) 100vw, 42vw"
           />
@@ -482,19 +445,6 @@ export default function Home() {
             </p>
           </div>
 
-          <figure className="responsibility-media" data-reveal>
-            <Image
-              src={IMAGE_SOLAR}
-              alt="Industrial rooftop solar panels"
-              fill
-              sizes="100vw"
-            />
-            <div>
-              <span>Responsible manufacturing</span>
-              <strong>Efficiency by design.</strong>
-            </div>
-          </figure>
-
           <div className="responsibility-grid">
             {responsible.map((item, index) => (
               <article
@@ -514,31 +464,27 @@ export default function Home() {
       </section>
 
       <section className="final-people">
-        <div className="final-people-visual" data-reveal>
-          <Image
-            src={IMAGE_EDITORIAL}
-            alt="People behind Colombo Design House"
-            fill
-            sizes="(max-width: 900px) 100vw, 45vw"
-          />
-        </div>
-
-        <div className="final-people-copy" data-reveal data-reveal-delay="80">
-          <div className="final-section-label">
-            <span>07</span>
-            <p>Our people</p>
+        <div className="shell final-people-inner">
+          <div className="final-people-heading" data-reveal>
+            <div className="final-section-label">
+              <span>07</span>
+              <p>Our people</p>
+            </div>
+            <h2>People make<em>the product.</em></h2>
           </div>
-          <h2>People make<em>the product.</em></h2>
-          <p className="final-lead">Behind every garment is a skilled person.</p>
-          <p>
-            We invest in training, create pathways for new recruits and aim to
-            build a workplace where people can grow alongside the business.
-          </p>
-          <p>
-            Our new factory will include a dedicated training centre, giving
-            local people the skills and opportunity to build careers in apparel
-            manufacturing.
-          </p>
+
+          <div className="final-people-copy" data-reveal data-reveal-delay="80">
+            <p className="final-lead">Behind every garment is a skilled person.</p>
+            <p>
+              We invest in training, create pathways for new recruits and aim to
+              build a workplace where people can grow alongside the business.
+            </p>
+            <p>
+              Our new factory will include a dedicated training centre, giving
+              local people the skills and opportunity to build careers in apparel
+              manufacturing.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -594,8 +540,8 @@ export default function Home() {
           <div className="final-brands-layout">
             <figure className="brand-media" data-reveal>
               <Image
-                src={IMAGE_SUIT}
-                alt="Premium menswear editorial"
+                src={IMAGE_MENSWEAR}
+                alt="Premium monochrome menswear editorial in formal tailoring"
                 fill
                 sizes="(max-width: 900px) 100vw, 42vw"
               />
