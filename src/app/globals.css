@@ -4301,3 +4301,143 @@ body.is-loading {
   filter: grayscale(1) contrast(1.06);
   object-position: center 38%;
 }
+
+
+/* ---- Global ambition editorial redesign ---- */
+
+.final-global-editorial {
+  display: grid;
+  grid-template-columns: .78fr 1.22fr;
+  gap: 26px;
+  align-items: stretch;
+}
+
+.final-global-media {
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+  margin: 0;
+  background: #111;
+}
+
+.final-global-media img {
+  object-fit: cover;
+  object-position: center 28%;
+  filter: grayscale(1) contrast(1.08);
+  transition: transform .8s cubic-bezier(.2,.8,.2,1);
+}
+
+.final-global-media:hover img {
+  transform: scale(1.035);
+}
+
+.final-global-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,.42), transparent 58%);
+}
+
+.final-global-media figcaption {
+  position: absolute;
+  z-index: 2;
+  left: 18px;
+  bottom: 18px;
+  padding: 9px 11px;
+  background: rgba(255,255,255,.92);
+  color: #111;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.final-global-content {
+  padding: 18px 0 10px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.final-global-content h2 {
+  max-width: 790px;
+}
+
+.final-global-content .final-global-copy {
+  max-width: 720px;
+  margin-left: auto;
+}
+
+.final-global .global-ambition {
+  margin-top: 34px;
+  min-height: 190px;
+  padding: 28px 32px;
+  border: 1px solid rgba(255,255,255,.17);
+  display: grid;
+  grid-template-columns: 180px auto 1fr;
+  gap: 30px;
+  align-items: center;
+  background: rgba(255,255,255,.025);
+}
+
+.final-global .global-ambition > span {
+  padding-bottom: 0;
+}
+
+.final-global .global-ambition strong {
+  font-size: clamp(78px, 8vw, 118px);
+}
+
+.final-global .global-ambition p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 980px) {
+  .final-global-editorial {
+    grid-template-columns: 1fr;
+  }
+
+  .final-global-media {
+    min-height: 500px;
+  }
+
+  .final-global-content {
+    padding: 18px 0 0;
+    gap: 34px;
+  }
+
+  .final-global-content .final-global-copy {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .final-global-media {
+    min-height: 420px;
+  }
+
+  .final-global-content {
+    gap: 26px;
+  }
+
+  .final-global .global-ambition {
+    min-height: 0;
+    margin-top: 28px;
+    padding: 20px;
+    grid-template-columns: 1fr auto;
+    gap: 10px 20px;
+  }
+
+  .final-global .global-ambition > span {
+    grid-column: 1 / -1;
+  }
+
+  .final-global .global-ambition strong {
+    font-size: 72px;
+  }
+
+  .final-global .global-ambition p {
+    align-self: end;
+    padding-bottom: 6px;
+  }
+}
