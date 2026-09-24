@@ -4,7 +4,7 @@ import SiteEnhancements from "@/components/SiteEnhancements";
 const HERO_VIDEO =
   "https://videos.pexels.com/video-files/6627028/6627028-uhd_4096_2160_25fps.mp4";
 const IMAGE_FACTORY =
-  "https://images.pexels.com/photos/31030917/pexels-photo-31030917.jpeg?auto=compress&cs=tinysrgb&w=1800";
+  "https://images.pexels.com/photos/6766301/pexels-photo-6766301.jpeg?auto=compress&cs=tinysrgb&w=1800";
 const IMAGE_CRAFT =
   "https://images.pexels.com/photos/5526370/pexels-photo-5526370.jpeg?auto=compress&cs=tinysrgb&w=1800";
 const IMAGE_MENSWEAR =
@@ -252,11 +252,11 @@ export default function Home() {
           <figure className="final-about-media" data-reveal>
             <Image
               src={IMAGE_FACTORY}
-              alt="Garment manufacturing floor with sewing teams"
+              alt="Bespoke menswear tailoring and suit fitting"
               fill
               sizes="100vw"
             />
-            <figcaption>Production / Craftsmanship / Scale</figcaption>
+            <figcaption>Menswear / Craftsmanship / Precision</figcaption>
           </figure>
         </div>
       </section>
