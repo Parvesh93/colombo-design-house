@@ -7,6 +7,14 @@ const IMAGE_SUIT =
   "https://images.pexels.com/photos/15561776/pexels-photo-15561776.jpeg?auto=compress&cs=tinysrgb&w=1800";
 const IMAGE_EDITORIAL =
   "https://images.pexels.com/photos/15529124/pexels-photo-15529124.jpeg?auto=compress&cs=tinysrgb&w=1600";
+const IMAGE_FACTORY =
+  "https://images.pexels.com/photos/31019576/pexels-photo-31019576/free-photo-of-industrial-textile-factory-with-workers-at-sewing-machines.jpeg?auto=compress&dpr=1&w=1800";
+const IMAGE_WORKER =
+  "https://images.pexels.com/photos/31212954/pexels-photo-31212954.jpeg?cs=srgb&fm=jpg&w=1400";
+const IMAGE_FABRIC =
+  "https://images.pexels.com/photos/31091534/pexels-photo-31091534.jpeg?cs=srgb&fm=jpg&w=1400";
+const IMAGE_SOLAR =
+  "https://images.pexels.com/photos/35454189/pexels-photo-35454189/free-photo-of-aerial-view-of-solar-panels-on-industrial-roof.jpeg?auto=compress&dpr=1&w=1800";
 
 const capabilities = [
   {
@@ -246,6 +254,16 @@ export default function Home() {
               <a className="final-text-link" href="#difference">Discover CDH <span>↗</span></a>
             </div>
           </div>
+
+          <figure className="final-about-media" data-reveal>
+            <Image
+              src={IMAGE_FACTORY}
+              alt="Garment manufacturing floor with sewing teams"
+              fill
+              sizes="100vw"
+            />
+            <figcaption>Production / Craftsmanship / Scale</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -285,6 +303,27 @@ export default function Home() {
                 </div>
               </article>
             ))}
+          </div>
+
+          <div className="capability-media-row" data-reveal>
+            <figure>
+              <Image
+                src={IMAGE_WORKER}
+                alt="Skilled garment worker operating a sewing machine"
+                fill
+                sizes="(max-width: 720px) 50vw, 42vw"
+              />
+              <figcaption>Skilled production</figcaption>
+            </figure>
+            <figure>
+              <Image
+                src={IMAGE_FABRIC}
+                alt="Textile production and fabric handling in a garment factory"
+                fill
+                sizes="(max-width: 720px) 50vw, 42vw"
+              />
+              <figcaption>Quality at every stage</figcaption>
+            </figure>
           </div>
 
           <a className="final-section-cta" href="#facilities" data-reveal>
@@ -352,6 +391,16 @@ export default function Home() {
               Dehiattakandiya, supported by two additional sub-plants.
             </p>
           </div>
+
+          <figure className="facility-media" data-reveal>
+            <Image
+              src={IMAGE_FACTORY}
+              alt="Organised garment production facility"
+              fill
+              sizes="100vw"
+            />
+            <figcaption>Manufacturing network / Sri Lanka</figcaption>
+          </figure>
 
           <div className="facility-grid">
             <article data-reveal>
@@ -432,6 +481,19 @@ export default function Home() {
               process — not added afterwards.
             </p>
           </div>
+
+          <figure className="responsibility-media" data-reveal>
+            <Image
+              src={IMAGE_SOLAR}
+              alt="Industrial rooftop solar panels"
+              fill
+              sizes="100vw"
+            />
+            <div>
+              <span>Responsible manufacturing</span>
+              <strong>Efficiency by design.</strong>
+            </div>
+          </figure>
 
           <div className="responsibility-grid">
             {responsible.map((item, index) => (
@@ -529,7 +591,18 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="brand-grid">
+          <div className="final-brands-layout">
+            <figure className="brand-media" data-reveal>
+              <Image
+                src={IMAGE_SUIT}
+                alt="Premium menswear editorial"
+                fill
+                sizes="(max-width: 900px) 100vw, 42vw"
+              />
+              <figcaption>Brand building / Premium menswear</figcaption>
+            </figure>
+
+            <div className="brand-grid">
             <article data-reveal>
               <span>01</span>
               <h3>Bluefort</h3>
@@ -540,6 +613,7 @@ export default function Home() {
               <h3>Summer Island</h3>
               <p>Our second in-house brand.</p>
             </article>
+            </div>
           </div>
 
           <a className="final-section-cta" href="#vision">
