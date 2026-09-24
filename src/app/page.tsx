@@ -497,40 +497,43 @@ export default function Home() {
             <p>From manufacturer to global brand</p>
           </div>
 
-          <div className="final-global-editorial">
+          <div className="final-global-compact">
             <figure className="final-global-media" data-reveal>
               <Image
                 src={IMAGE_GLOBAL_MENSWEAR}
                 alt="Premium black and white menswear editorial"
                 fill
-                sizes="(max-width: 900px) 100vw, 42vw"
+                sizes="(max-width: 900px) 100vw, 38vw"
               />
               <figcaption>Menswear / Global ambition / Modern tailoring</figcaption>
             </figure>
 
-            <div className="final-global-content" data-reveal data-reveal-delay="80">
-              <h2>Smaller runs.<em>Bigger possibilities.</em></h2>
+            <div className="final-global-panel" data-reveal data-reveal-delay="80">
+              <div className="final-global-panel-copy">
+                <h2>Smaller runs.<em>Bigger possibilities.</em></h2>
 
-              <div className="final-global-copy">
-                <p>
-                  The global apparel market is changing. Buyers want quality,
-                  flexibility, responsible production and the ability to move with
-                  changing tastes.
-                </p>
-                <p>That&apos;s where we see our opportunity.</p>
-                <p>
-                  Our new facility will strengthen our design capabilities, trend
-                  forecasting and production capacity — enabling us to serve more
-                  international buyers while continuing to build our own brands.
-                </p>
+                <div className="final-global-copy">
+                  <p>
+                    The global apparel market is changing. Buyers want quality,
+                    flexibility, responsible production and the ability to move
+                    with changing tastes.
+                  </p>
+                  <p>That&apos;s where we see our opportunity.</p>
+                  <p>
+                    Our new facility will strengthen our design capabilities,
+                    trend forecasting and production capacity — enabling us to
+                    serve more international buyers while continuing to build our
+                    own brands.
+                  </p>
+                </div>
+              </div>
+
+              <div className="global-ambition">
+                <span>Our 2035 ambition</span>
+                <strong>50%</strong>
+                <p>of revenue from exports</p>
               </div>
             </div>
-          </div>
-
-          <div className="global-ambition" data-reveal>
-            <span>Our 2035 ambition</span>
-            <strong>50%</strong>
-            <p>of revenue from exports</p>
           </div>
         </div>
       </section>
