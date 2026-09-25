@@ -4618,3 +4618,19 @@ body.is-loading {
     font-size: 8.5px;
   }
 }
+
+
+/* ---- Center CDH difference supporting statement ---- */
+.final-home .difference-note {
+  max-width: 900px;
+  margin: 42px auto 0;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .final-home .difference-note {
+    max-width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
