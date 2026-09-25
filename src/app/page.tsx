@@ -67,6 +67,33 @@ const factoryFeatures = [
   "Automation for safer, more efficient production",
 ];
 
+const retailPartners = [
+  {
+    name: "Thilakawardana",
+    logo: "https://www.thingstodosrilanka.com/wp-content/uploads/2025/07/thilakawardana-textiles-logo-2.jpg",
+  },
+  {
+    name: "ODEL",
+    logo: "https://cdn.bitrefill.com/content/cn/b_rgb%3AFFFFFF%2Cc_pad%2Ch_800%2Cw_800/v1701701525/odel-sri-lanka.webp",
+  },
+  {
+    name: "Kelly Felder",
+    logo: "https://pbs.twimg.com/profile_images/487088996791488512/5ww5Ls_r.png",
+  },
+  {
+    name: "House of Fashion",
+    logo: "https://www.americanexpress.lk/images/specialOffers/clothing/HouseFashion.jpg",
+  },
+  {
+    name: "Cool Planet",
+    logo: "https://cdn.shopify.com/s/files/1/0603/1402/6208/files/Cool_Planet.jpg?v=1662018723",
+  },
+  {
+    name: "GFlock",
+    logo: "https://promolkwebsite.blob.core.windows.net/profiles/promo.lk-15d74e116ec84593846e058958b67949.jpg",
+  },
+];
+
 function LineIcon({
   type,
 }: {
@@ -578,10 +605,59 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="partners" className="final-section final-partners">
+        <div className="shell">
+          <div className="final-partners-head" data-reveal>
+            <div>
+              <div className="final-section-label">
+                <span>08</span>
+                <p>Who we work with</p>
+              </div>
+              <h2>Trusted local<em>retail partners.</em></h2>
+            </div>
+
+            <p>
+              We supply many locally recognised retailers across Sri Lanka,
+              supporting established fashion businesses with flexible garment
+              production.
+            </p>
+          </div>
+
+          <div className="retail-partners-grid">
+            {retailPartners.map((partner, index) => (
+              <article
+                className="retail-partner-card"
+                key={partner.name}
+                data-reveal
+                data-reveal-delay={String(index * 55)}
+              >
+                <span>{String(index + 1).padStart(2, "0")}</span>
+
+                <div className="retail-partner-logo">
+                  <img
+                    src={partner.logo}
+                    alt={`${partner.name} logo`}
+                    loading="lazy"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+
+                <p>{partner.name}</p>
+              </article>
+            ))}
+          </div>
+
+          <p className="retail-partners-note" data-reveal>
+            Around 20,000 garments a month are also exported as indirect orders
+            through other factories.
+          </p>
+        </div>
+      </section>
+
       <section className="final-global">
         <div className="shell">
           <div className="final-section-label final-section-label-light" data-reveal>
-            <span>08</span>
+            <span>09</span>
             <p>From manufacturer to global brand</p>
           </div>
 
@@ -630,7 +706,7 @@ export default function Home() {
         <div className="shell">
           <div className="final-brands-head" data-reveal>
             <div className="final-section-label">
-              <span>09</span>
+              <span>10</span>
               <p>Our brands</p>
             </div>
             <h2>Brands built<em>by us.</em></h2>
@@ -674,7 +750,7 @@ export default function Home() {
       <section id="vision" className="final-vision">
         <div className="shell">
           <div className="final-section-label final-section-label-light" data-reveal>
-            <span>10</span>
+            <span>11</span>
             <p>Our vision</p>
           </div>
 
