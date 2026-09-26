@@ -11,6 +11,8 @@ const IMAGE_MENSWEAR =
   "https://images.pexels.com/photos/30148716/pexels-photo-30148716.jpeg?auto=compress&cs=tinysrgb&w=1800";
 const IMAGE_GLOBAL_MENSWEAR =
   "https://images.pexels.com/photos/18749982/pexels-photo-18749982.jpeg?auto=compress&cs=tinysrgb&w=1800";
+const IMAGE_PEOPLE_WORKSHOP =
+  "https://images.pexels.com/photos/11597952/pexels-photo-11597952.jpeg?auto=compress&cs=tinysrgb&w=1800";
 
 const capabilities = [
   {
@@ -590,17 +592,47 @@ export default function Home() {
             <h2>People make<em>the product.</em></h2>
           </div>
 
-          <div className="final-people-copy" data-reveal data-reveal-delay="80">
-            <p className="final-lead">Behind every garment is a skilled person.</p>
-            <p>
-              We invest in training, create pathways for new recruits and aim to
-              build a workplace where people can grow alongside the business.
-            </p>
-            <p>
-              Our new factory will include a dedicated training centre, giving
-              local people the skills and opportunity to build careers in apparel
-              manufacturing.
-            </p>
+          <div className="final-people-content">
+            <figure className="final-people-media" data-reveal>
+              <Image
+                src={IMAGE_PEOPLE_WORKSHOP}
+                alt="Skilled tailors working together in a garment workshop"
+                fill
+                sizes="(max-width: 900px) 100vw, 46vw"
+              />
+              <figcaption>Skill / Craft / Opportunity</figcaption>
+            </figure>
+
+            <div className="final-people-copy" data-reveal data-reveal-delay="80">
+              <p className="final-lead">Behind every garment is a skilled person.</p>
+              <p>
+                We invest in training, create pathways for new recruits and aim to
+                build a workplace where people can grow alongside the business.
+              </p>
+              <p>
+                Our new factory will include a dedicated training centre, giving
+                local people the skills and opportunity to build careers in apparel
+                manufacturing.
+              </p>
+
+              <div className="people-points">
+                <article>
+                  <span>01</span>
+                  <h3>Training</h3>
+                  <p>Practical skills development for new and existing team members.</p>
+                </article>
+                <article>
+                  <span>02</span>
+                  <h3>Growth</h3>
+                  <p>Clear pathways for people to develop alongside the business.</p>
+                </article>
+                <article>
+                  <span>03</span>
+                  <h3>Opportunity</h3>
+                  <p>Creating apparel careers for people in local communities.</p>
+                </article>
+              </div>
+            </div>
           </div>
         </div>
       </section>
