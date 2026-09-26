@@ -4800,3 +4800,74 @@ body.is-loading {
     text-align: left;
   }
 }
+
+
+/* ---- Retail partner logo sizing + background cleanup ---- */
+
+.final-home .retail-partner-card {
+  min-height: 210px;
+  background: #f8f7f3;
+}
+
+.final-home .retail-partner-card:nth-child(even) {
+  background: #eef1ec;
+}
+
+.final-home .retail-partner-logo {
+  height: 112px;
+  padding: 0;
+  overflow: visible;
+}
+
+.final-home .retail-partner-logo img {
+  max-width: 92%;
+  max-height: 96px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  background: transparent !important;
+  border: 0;
+  box-shadow: none;
+  mix-blend-mode: multiply;
+  filter: grayscale(1) contrast(1.12);
+}
+
+/* Thilakawardana: source has a dark grey tile */
+.final-home .retail-partner-card:nth-child(1) .retail-partner-logo img {
+  filter: grayscale(1) invert(1) contrast(2.1) brightness(1.35);
+  mix-blend-mode: multiply;
+}
+
+/* Kelly Felder: source has a black tile */
+.final-home .retail-partner-card:nth-child(3) .retail-partner-logo img {
+  filter: grayscale(1) invert(1) contrast(1.5);
+  mix-blend-mode: multiply;
+}
+
+/* Flat white-background logos */
+.final-home .retail-partner-card:nth-child(2) .retail-partner-logo img,
+.final-home .retail-partner-card:nth-child(4) .retail-partner-logo img,
+.final-home .retail-partner-card:nth-child(5) .retail-partner-logo img,
+.final-home .retail-partner-card:nth-child(6) .retail-partner-logo img {
+  mix-blend-mode: multiply;
+}
+
+/* Keep logos large on hover without making the cards jump */
+.final-home .retail-partner-card:hover .retail-partner-logo img {
+  transform: scale(1.035);
+}
+
+@media (max-width: 720px) {
+  .final-home .retail-partner-card {
+    min-height: 170px;
+  }
+
+  .final-home .retail-partner-logo {
+    height: 78px;
+  }
+
+  .final-home .retail-partner-logo img {
+    max-width: 96%;
+    max-height: 68px;
+  }
+}
