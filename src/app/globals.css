@@ -4960,3 +4960,97 @@ body.is-loading {
     transform: scale(1.3);
   }
 }
+
+
+/* ---- Retail partner logo containment fix ---- */
+
+.final-home .retail-partner-card {
+  overflow: hidden;
+}
+
+.final-home .retail-partner-logo {
+  position: relative;
+  width: 100%;
+  height: 108px;
+  overflow: hidden;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.final-home .retail-partner-logo img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+  transform: none !important;
+  background: transparent !important;
+  border: 0;
+  box-shadow: none;
+  mix-blend-mode: multiply;
+  filter: grayscale(1) contrast(1.08);
+}
+
+/* Logos with large empty canvas: zoom only inside the clipped logo frame */
+.final-home .retail-partner-card:nth-child(1) .retail-partner-logo img {
+  width: 145%;
+  height: 145%;
+  filter: grayscale(1) contrast(1.35);
+}
+
+.final-home .retail-partner-card:nth-child(3) .retail-partner-logo img {
+  width: 140%;
+  height: 140%;
+  filter: grayscale(1) contrast(1.2);
+}
+
+.final-home .retail-partner-card:nth-child(4) .retail-partner-logo img {
+  width: 138%;
+  height: 138%;
+  filter: grayscale(1) contrast(1.18);
+}
+
+/* Normal logo sizing */
+.final-home .retail-partner-card:nth-child(2) .retail-partner-logo img {
+  width: 78%;
+  height: 78%;
+}
+
+.final-home .retail-partner-card:nth-child(5) .retail-partner-logo img {
+  width: 84%;
+  height: 84%;
+}
+
+.final-home .retail-partner-card:nth-child(6) .retail-partner-logo img {
+  width: 72%;
+  height: 72%;
+}
+
+.final-home .retail-partner-card:hover .retail-partner-logo img {
+  transform: none !important;
+}
+
+@media (max-width: 720px) {
+  .final-home .retail-partner-logo {
+    height: 72px;
+    padding: 0 8px;
+  }
+
+  .final-home .retail-partner-card:nth-child(1) .retail-partner-logo img {
+    width: 150%;
+    height: 150%;
+  }
+
+  .final-home .retail-partner-card:nth-child(3) .retail-partner-logo img {
+    width: 145%;
+    height: 145%;
+  }
+
+  .final-home .retail-partner-card:nth-child(4) .retail-partner-logo img {
+    width: 142%;
+    height: 142%;
+  }
+}
