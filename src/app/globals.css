@@ -4871,3 +4871,92 @@ body.is-loading {
     max-height: 68px;
   }
 }
+
+
+/* ---- Per-logo retail partner scaling refinement ---- */
+
+.final-home .retail-partner-logo {
+  height: 124px;
+}
+
+.final-home .retail-partner-logo img {
+  max-width: 96%;
+  max-height: 100px;
+}
+
+/* Thilakawardana */
+.final-home .retail-partner-card:nth-child(1) .retail-partner-logo img {
+  width: 72%;
+  max-width: none;
+  max-height: none;
+  transform: scale(1.55);
+}
+
+/* ODEL */
+.final-home .retail-partner-card:nth-child(2) .retail-partner-logo img {
+  transform: scale(1.15);
+}
+
+/* Kelly Felder */
+.final-home .retail-partner-card:nth-child(3) .retail-partner-logo img {
+  width: 74%;
+  max-width: none;
+  max-height: none;
+  transform: scale(1.55);
+}
+
+/* House of Fashion */
+.final-home .retail-partner-card:nth-child(4) .retail-partner-logo img {
+  width: 72%;
+  max-width: none;
+  max-height: none;
+  transform: scale(1.5);
+}
+
+/* Cool Planet */
+.final-home .retail-partner-card:nth-child(5) .retail-partner-logo img {
+  transform: scale(1.15);
+}
+
+/* GFlock */
+.final-home .retail-partner-card:nth-child(6) .retail-partner-logo img {
+  transform: scale(1.2);
+}
+
+.final-home .retail-partner-card:hover .retail-partner-logo img {
+  transform: scale(1.06);
+}
+
+/* Preserve larger custom scale on hover */
+.final-home .retail-partner-card:nth-child(1):hover .retail-partner-logo img {
+  transform: scale(1.62);
+}
+
+.final-home .retail-partner-card:nth-child(3):hover .retail-partner-logo img {
+  transform: scale(1.62);
+}
+
+.final-home .retail-partner-card:nth-child(4):hover .retail-partner-logo img {
+  transform: scale(1.57);
+}
+
+@media (max-width: 720px) {
+  .final-home .retail-partner-logo {
+    height: 90px;
+  }
+
+  .final-home .retail-partner-card:nth-child(1) .retail-partner-logo img {
+    width: 78%;
+    transform: scale(1.35);
+  }
+
+  .final-home .retail-partner-card:nth-child(3) .retail-partner-logo img {
+    width: 80%;
+    transform: scale(1.35);
+  }
+
+  .final-home .retail-partner-card:nth-child(4) .retail-partner-logo img {
+    width: 78%;
+    transform: scale(1.3);
+  }
+}
