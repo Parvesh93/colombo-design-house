@@ -5054,3 +5054,130 @@ body.is-loading {
     height: 142%;
   }
 }
+
+
+/* ---- Completed people section ---- */
+
+.final-home .final-people-inner {
+  grid-template-columns: .72fr 1.28fr;
+  gap: 72px;
+  align-items: start;
+}
+
+.final-home .final-people-content {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.final-home .final-people-media {
+  position: relative;
+  min-height: 470px;
+  overflow: hidden;
+  margin: 0;
+  background: #d8d8d2;
+}
+
+.final-home .final-people-media img {
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(1) contrast(1.06);
+  transition: transform .8s cubic-bezier(.2,.8,.2,1);
+}
+
+.final-home .final-people-media:hover img {
+  transform: scale(1.035);
+}
+
+.final-home .final-people-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,.42), transparent 58%);
+}
+
+.final-home .final-people-media figcaption {
+  position: absolute;
+  z-index: 2;
+  left: 16px;
+  bottom: 16px;
+  padding: 8px 10px;
+  background: rgba(255,255,255,.92);
+  color: #111;
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.final-home .people-points {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(20,56,44,.16);
+  border-left: 1px solid rgba(20,56,44,.16);
+}
+
+.final-home .people-points article {
+  min-height: 170px;
+  padding: 16px;
+  border-right: 1px solid rgba(20,56,44,.16);
+  border-bottom: 1px solid rgba(20,56,44,.16);
+  background: rgba(255,255,255,.34);
+}
+
+.final-home .people-points span {
+  color: #8d928d;
+  font-size: 7px;
+  font-weight: 800;
+}
+
+.final-home .people-points h3 {
+  margin: 42px 0 8px;
+  color: var(--green);
+  font-size: 18px;
+  letter-spacing: -.03em;
+}
+
+.final-home .people-points p {
+  margin: 0;
+  color: #686d69;
+  font-size: 9px;
+  line-height: 1.55;
+}
+
+@media (max-width: 980px) {
+  .final-home .final-people-inner,
+  .final-home .final-people-content {
+    grid-template-columns: 1fr;
+  }
+
+  .final-home .final-people-media {
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 720px) {
+  .final-home .final-people-media {
+    min-height: 320px;
+  }
+
+  .final-home .people-points {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .final-home .people-points article {
+    min-height: 145px;
+    padding: 12px;
+  }
+
+  .final-home .people-points h3 {
+    margin-top: 28px;
+    font-size: 14px;
+  }
+
+  .final-home .people-points p {
+    font-size: 8px;
+  }
+}
