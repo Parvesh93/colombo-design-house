@@ -12,26 +12,22 @@ const capabilities = [
   {
     title: "Formal Shirts",
     description: "Precision-made for a polished finish.",
-    image:
-      "https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/images/IMG_5714.JPG.jpeg",
   },
   {
     title: "Casual Shirts",
     description: "Designed for everyday versatility.",
-    image:
-      "https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/images/IMG_5704.JPEG",
   },
   {
-    title: "Ladies' Shirts",
+    title: "Ladies Wear",
     description: "Quality garments with contemporary appeal.",
-    image:
-      "https://images.pexels.com/photos/27310019/pexels-photo-27310019.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/images/IMG_5720.jpeg",
   },
   {
     title: "Undergarments",
     description: "Reliable everyday essentials.",
-    image:
-      "https://images.pexels.com/photos/8731337/pexels-photo-8731337.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/images/IMG_5727.jpeg",
   },
 ];
 
