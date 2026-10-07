@@ -5386,3 +5386,11 @@ body.is-loading {
     font-size: 10px;
   }
 }
+
+
+/* ---- Mobile people image crop ---- */
+@media (max-width: 720px) {
+  .final-home .final-people-media img {
+    object-position: center 18% !important;
+  }
+}
