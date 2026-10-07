@@ -5407,3 +5407,20 @@ body.is-loading {
   align-items: center;
   justify-content: center;
 }
+
+
+/* ---- Center image label tabs themselves ---- */
+.final-home .final-about-media figcaption,
+.final-home .final-global-media figcaption,
+.final-home .final-people-media figcaption,
+.final-home .brand-media figcaption,
+.final-home .bluefort-media figcaption {
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) !important;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
