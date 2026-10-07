@@ -78,7 +78,7 @@ const retailPartners = [
   },
   {
     name: "House of Fashion",
-    logo: "/partners/house-of-fashion_1.jpg",
+    logo: "/partners/house-of-fashion_1.png",
   },
   {
     name: "Cool Planet",
