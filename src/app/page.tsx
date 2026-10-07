@@ -66,7 +66,7 @@ const factoryFeatures = [
 const retailPartners = [
   {
     name: "Thilakawardana",
-    logo: "https://www.thingstodosrilanka.com/wp-content/uploads/2025/07/thilakawardana-textiles-logo-2.jpg",
+    logo: "/partners/thilakawardhana.jpeg",
   },
   {
     name: "ODEL",
@@ -74,7 +74,7 @@ const retailPartners = [
   },
   {
     name: "Kelly Felder",
-    logo: "https://pbs.twimg.com/profile_images/487088996791488512/5ww5Ls_r.png",
+    logo: "/partners/kelly-felder.png",
   },
   {
     name: "House of Fashion",
