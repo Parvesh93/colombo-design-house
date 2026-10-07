@@ -5217,3 +5217,172 @@ body.is-loading {
     min-height: 390px;
   }
 }
+
+
+/* ---- Bluefort single-brand feature ---- */
+
+.final-home .final-brands-head-single {
+  max-width: none;
+  display: grid;
+  grid-template-columns: 1fr 390px;
+  gap: 80px;
+  align-items: end;
+}
+
+.final-home .final-brands-head-single > p {
+  margin: 0 0 5px;
+  max-width: 390px;
+}
+
+.final-home .bluefort-feature {
+  display: grid;
+  grid-template-columns: 1.08fr .92fr;
+  min-height: 560px;
+  border: 1px solid rgba(20,56,44,.16);
+}
+
+.final-home .bluefort-media {
+  min-height: 560px;
+  border-right: 1px solid rgba(20,56,44,.16);
+}
+
+.final-home .bluefort-media img {
+  object-position: center 28%;
+}
+
+.final-home .bluefort-card {
+  min-width: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #eef1ec;
+}
+
+.final-home .bluefort-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  color: #858b86;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.final-home .bluefort-logo-wrap {
+  min-height: 145px;
+  margin: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.final-home .bluefort-logo-wrap img {
+  width: min(82%, 390px);
+  height: auto;
+  max-height: 135px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.final-home .bluefort-card-copy {
+  max-width: 520px;
+}
+
+.final-home .bluefort-eyebrow {
+  margin: 0 0 12px;
+  color: #8b908c;
+  font-size: 8px !important;
+  font-weight: 800;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.final-home .bluefort-card-copy h3 {
+  max-width: 500px;
+  margin: 0;
+  color: var(--green);
+  font-family: Georgia, serif;
+  font-size: clamp(28px, 2.7vw, 42px);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -.035em;
+}
+
+.final-home .bluefort-card-copy > p:last-child {
+  max-width: 450px;
+  margin: 20px 0 0;
+  color: #676c68;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.final-home .bluefort-link {
+  width: fit-content;
+  margin-top: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--green);
+  color: var(--green);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 980px) {
+  .final-home .final-brands-head-single {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .final-home .bluefort-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .final-home .bluefort-media {
+    min-height: 500px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(20,56,44,.16);
+  }
+
+  .final-home .bluefort-card {
+    min-height: 480px;
+  }
+}
+
+@media (max-width: 720px) {
+  .final-home .bluefort-feature {
+    min-height: 0;
+  }
+
+  .final-home .bluefort-media {
+    min-height: 390px;
+  }
+
+  .final-home .bluefort-card {
+    min-height: 410px;
+    padding: 20px;
+  }
+
+  .final-home .bluefort-logo-wrap {
+    min-height: 105px;
+    margin: 24px 0;
+  }
+
+  .final-home .bluefort-logo-wrap img {
+    width: min(88%, 320px);
+    max-height: 100px;
+  }
+
+  .final-home .bluefort-card-copy h3 {
+    font-size: 27px;
+  }
+
+  .final-home .bluefort-card-copy > p:last-child {
+    font-size: 10px;
+  }
+}
