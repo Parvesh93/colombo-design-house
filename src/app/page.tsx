@@ -293,16 +293,6 @@ export default function Home() {
           <source src={HERO_VIDEO} type="video/mp4" />
         </video>
         <div className="final-hero-shade" />
-        <div className="final-hero-mark" aria-hidden="true">
-          <Image
-            src="/logo/cdh-monogram-white.png"
-            alt=""
-            fill
-            sizes="45vw"
-            priority
-          />
-        </div>
-
         <div className="shell final-hero-content">
           <div className="final-hero-copy hero-animate hero-animate-1">
             <p className="micro-label">Sri Lankan Garment Manufacturing</p>
