@@ -1,18 +1,12 @@
 import Image from "next/image";
 import SiteEnhancements from "@/components/SiteEnhancements";
 
-const HERO_VIDEO =
-  "https://videos.pexels.com/video-files/6627028/6627028-uhd_4096_2160_25fps.mp4";
-const IMAGE_FACTORY =
-  "https://images.pexels.com/photos/6766301/pexels-photo-6766301.jpeg?auto=compress&cs=tinysrgb&w=1800";
-const IMAGE_CRAFT =
-  "https://images.pexels.com/photos/5526370/pexels-photo-5526370.jpeg?auto=compress&cs=tinysrgb&w=1800";
-const IMAGE_MENSWEAR =
-  "https://images.pexels.com/photos/30148716/pexels-photo-30148716.jpeg?auto=compress&cs=tinysrgb&w=1800";
-const IMAGE_GLOBAL_MENSWEAR =
-  "https://images.pexels.com/photos/18749982/pexels-photo-18749982.jpeg?auto=compress&cs=tinysrgb&w=1800";
-const IMAGE_PEOPLE_WORKSHOP =
-  "https://images.pexels.com/photos/11597952/pexels-photo-11597952.jpeg?auto=compress&cs=tinysrgb&w=1800";
+const HERO_VIDEO = "/hero-video/IMG_3192.M4V";
+const IMAGE_FACTORY = "/images/IMG_5703.JPEG";
+const IMAGE_CRAFT = "/images/IMG_5704.JPEG";
+const IMAGE_MENSWEAR = "/images/IMG_5714.JPG.jpeg";
+const IMAGE_GLOBAL_MENSWEAR = "/images/IMG_5715.JPG.jpeg";
+const IMAGE_PEOPLE_WORKSHOP = "/images/IMG_5713.JPG.jpeg";
 
 const capabilities = [
   {
@@ -371,11 +365,11 @@ export default function Home() {
           <figure className="final-about-media" data-reveal>
             <Image
               src={IMAGE_FACTORY}
-              alt="Bespoke menswear tailoring and suit fitting"
+              alt="Colombo Design House apparel and manufacturing"
               fill
               sizes="100vw"
             />
-            <figcaption>Menswear / Craftsmanship / Precision</figcaption>
+            <figcaption>Colombo Design House / Craftsmanship / Precision</figcaption>
           </figure>
         </div>
       </section>
@@ -513,7 +507,7 @@ export default function Home() {
         <div className="final-new-factory-media">
           <Image
             src={IMAGE_CRAFT}
-            alt="Skilled garment craftsmanship and sewing production"
+            alt="Colombo Design House garment production and craftsmanship"
             fill
             sizes="(max-width: 900px) 100vw, 42vw"
           />
@@ -596,7 +590,7 @@ export default function Home() {
             <figure className="final-people-media" data-reveal>
               <Image
                 src={IMAGE_PEOPLE_WORKSHOP}
-                alt="Skilled tailors working together in a garment workshop"
+                alt="Colombo Design House people and garment production"
                 fill
                 sizes="(max-width: 900px) 100vw, 46vw"
               />
@@ -697,7 +691,7 @@ export default function Home() {
             <figure className="final-global-media" data-reveal>
               <Image
                 src={IMAGE_GLOBAL_MENSWEAR}
-                alt="Premium black and white menswear editorial"
+                alt="Colombo Design House menswear and global brand direction"
                 fill
                 sizes="(max-width: 900px) 100vw, 38vw"
               />
@@ -752,7 +746,7 @@ export default function Home() {
             <figure className="brand-media" data-reveal>
               <Image
                 src={IMAGE_MENSWEAR}
-                alt="Premium monochrome menswear editorial in formal tailoring"
+                alt="Colombo Design House apparel brand imagery"
                 fill
                 sizes="(max-width: 900px) 100vw, 42vw"
               />
