@@ -13,13 +13,13 @@ const capabilities = [
     title: "Formal Shirts",
     description: "Precision-made for a polished finish.",
     image:
-      "https://images.pexels.com/photos/5083017/pexels-photo-5083017.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
   {
     title: "Casual Shirts",
     description: "Designed for everyday versatility.",
     image:
-      "https://images.pexels.com/photos/36823886/pexels-photo-36823886.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
   {
     title: "Ladies' Shirts",
