@@ -12,22 +12,26 @@ const capabilities = [
   {
     title: "Formal Shirts",
     description: "Precision-made for a polished finish.",
-    icon: "shirt",
+    image:
+      "https://images.pexels.com/photos/5083017/pexels-photo-5083017.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
   {
     title: "Casual Shirts",
     description: "Designed for everyday versatility.",
-    icon: "casual",
+    image:
+      "https://images.pexels.com/photos/36823886/pexels-photo-36823886.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
   {
     title: "Ladies' Shirts",
     description: "Quality garments with contemporary appeal.",
-    icon: "ladies",
+    image:
+      "https://images.pexels.com/photos/27310019/pexels-photo-27310019.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
   {
     title: "Undergarments",
     description: "Reliable everyday essentials.",
-    icon: "essentials",
+    image:
+      "https://images.pexels.com/photos/8731337/pexels-photo-8731337.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
 ];
 
@@ -380,21 +384,27 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="capability-grid">
+          <div className="capability-grid capability-image-grid">
             {capabilities.map((item, index) => (
               <article
                 key={item.title}
-                className="capability-card"
+                className="capability-card capability-image-card"
                 data-reveal
                 data-reveal-delay={String(index * 60)}
               >
-                <div className="capability-card-top">
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  <div className="capability-icon">
-                    <LineIcon type={item.icon as "shirt" | "casual" | "ladies" | "essentials"} />
-                  </div>
+                <div className="capability-card-media">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    sizes="(max-width: 720px) 50vw, 25vw"
+                  />
+                  <span className="capability-card-index">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
                 </div>
-                <div>
+
+                <div className="capability-card-body">
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
                 </div>
