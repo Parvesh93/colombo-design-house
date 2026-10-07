@@ -5540,3 +5540,25 @@ body.is-loading {
     height: 28px;
   }
 }
+
+
+/* ---- Retail partner repo-logo sizing correction ---- */
+.final-home .retail-partner-card:nth-child(1) .retail-partner-logo img {
+  width: 68% !important;
+  height: 68% !important;
+  object-fit: contain;
+}
+
+.final-home .retail-partner-card:nth-child(3) .retail-partner-logo img {
+  width: 68% !important;
+  height: 68% !important;
+  object-fit: contain;
+}
+
+@media (max-width: 720px) {
+  .final-home .retail-partner-card:nth-child(1) .retail-partner-logo img,
+  .final-home .retail-partner-card:nth-child(3) .retail-partner-logo img {
+    width: 74% !important;
+    height: 74% !important;
+  }
+}
