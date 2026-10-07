@@ -66,27 +66,27 @@ const factoryFeatures = [
 const retailPartners = [
   {
     name: "Thilakawardana",
-    logo: "/partners/thilakawardhana.jpeg",
+    logo: "/partners/thilakawardhana_1.jpeg",
   },
   {
     name: "ODEL",
-    logo: "https://cdn.bitrefill.com/content/cn/b_rgb%3AFFFFFF%2Cc_pad%2Ch_800%2Cw_800/v1701701525/odel-sri-lanka.webp",
+    logo: "/partners/odel_1.png",
   },
   {
     name: "Kelly Felder",
-    logo: "/partners/kelly-felder.png",
+    logo: "/partners/kelly-felder_1.png",
   },
   {
     name: "House of Fashion",
-    logo: "https://www.americanexpress.lk/images/specialOffers/clothing/HouseFashion.jpg",
+    logo: "/partners/house-of-fashion_1.jpg",
   },
   {
     name: "Cool Planet",
-    logo: "https://cdn.shopify.com/s/files/1/0603/1402/6208/files/Cool_Planet.jpg?v=1662018723",
+    logo: "/partners/cool-planet_1.png",
   },
   {
     name: "GFlock",
-    logo: "https://promolkwebsite.blob.core.windows.net/profiles/promo.lk-15d74e116ec84593846e058958b67949.jpg",
+    logo: "/partners/gflock_1.png",
   },
 ];
 
