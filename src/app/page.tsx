@@ -4,7 +4,7 @@ import SiteEnhancements from "@/components/SiteEnhancements";
 const HERO_VIDEO = "/hero-video/IMG_3192.M4V";
 const IMAGE_FACTORY = "/images/IMG_5711.JPG.jpeg";
 const IMAGE_CRAFT = "/images/IMG_5707.JPG.jpeg";
-const IMAGE_MENSWEAR = "/images/IMG_5718.JPG.jpeg";
+const IMAGE_MENSWEAR = "/images/IMG_5725.JPG.jpeg";
 const IMAGE_GLOBAL_MENSWEAR = "/images/IMG_5715.JPG.jpeg";
 const IMAGE_PEOPLE_WORKSHOP = "/images/IMG_5713.JPG.jpeg";
 
@@ -12,7 +12,7 @@ const capabilities = [
   {
     title: "Formal Shirts",
     description: "Precision-made for a polished finish.",
-    image: "/images/IMG_5714.JPG.jpeg",
+    image: "/images/IMG_5718.JPG.jpeg",
   },
   {
     title: "Casual Shirts",
