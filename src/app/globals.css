@@ -5394,3 +5394,16 @@ body.is-loading {
     object-position: center 18% !important;
   }
 }
+
+
+/* ---- Center align image label tabs ---- */
+.final-home .final-about-media figcaption,
+.final-home .final-global-media figcaption,
+.final-home .final-people-media figcaption,
+.final-home .brand-media figcaption,
+.final-home .bluefort-media figcaption {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
