@@ -2,7 +2,7 @@ import Image from "next/image";
 import SiteEnhancements from "@/components/SiteEnhancements";
 
 const HERO_VIDEO = "/hero-video/IMG_3192.M4V";
-const IMAGE_FACTORY = "/images/IMG_5703.JPEG";
+const IMAGE_FACTORY = "/images/IMG_5711.JPEG";
 const IMAGE_CRAFT = "/images/IMG_5704.JPEG";
 const IMAGE_MENSWEAR = "/images/IMG_5714.JPG.jpeg";
 const IMAGE_GLOBAL_MENSWEAR = "/images/IMG_5715.JPG.jpeg";
