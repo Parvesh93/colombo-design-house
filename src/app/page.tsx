@@ -730,46 +730,63 @@ export default function Home() {
 
       <section id="brands" className="final-section final-brands">
         <div className="shell">
-          <div className="final-brands-head" data-reveal>
-            <div className="final-section-label">
-              <span>10</span>
-              <p>Our brands</p>
+          <div className="final-brands-head final-brands-head-single" data-reveal>
+            <div>
+              <div className="final-section-label">
+                <span>10</span>
+                <p>Our brand</p>
+              </div>
+              <h2>Built by us.<em>Made to stand apart.</em></h2>
             </div>
-            <h2>Brands built<em>by us.</em></h2>
+
             <p>
-              Alongside manufacturing for retailers, we build and operate our
-              own apparel brands.
+              Alongside manufacturing for retailers, we build our own apparel
+              brand — shaped by the same experience, quality and attention to
+              detail behind Colombo Design House.
             </p>
           </div>
 
-          <div className="final-brands-layout">
-            <figure className="brand-media" data-reveal>
+          <div className="bluefort-feature">
+            <figure className="brand-media bluefort-media" data-reveal>
               <Image
                 src={IMAGE_MENSWEAR}
-                alt="Colombo Design House apparel brand imagery"
+                alt="Bluefort premium menswear"
                 fill
-                sizes="(max-width: 900px) 100vw, 42vw"
+                sizes="(max-width: 900px) 100vw, 55vw"
               />
-              <figcaption>Brand building / Premium menswear</figcaption>
+              <figcaption>Bluefort / Premium menswear / Sri Lanka</figcaption>
             </figure>
 
-            <div className="brand-grid">
-            <article data-reveal>
-              <span>01</span>
-              <h3>Bluefort</h3>
-              <p>Our flagship premium men&apos;s shirt brand.</p>
-            </article>
-            <article data-reveal data-reveal-delay="80">
-              <span>02</span>
-              <h3>Summer Island</h3>
-              <p>Our second in-house brand.</p>
-            </article>
-            </div>
-          </div>
+            <article className="bluefort-card" data-reveal data-reveal-delay="80">
+              <div className="bluefort-card-top">
+                <span>01 / Flagship brand</span>
+                <span>Menswear</span>
+              </div>
 
-          <a className="final-section-cta" href="#vision">
-            Explore Our Brands <span>↗</span>
-          </a>
+              <div className="bluefort-logo-wrap">
+                <Image
+                  src="/brands/logo-bluefort.png"
+                  alt="Bluefort"
+                  width={420}
+                  height={180}
+                />
+              </div>
+
+              <div className="bluefort-card-copy">
+                <p className="bluefort-eyebrow">Colombo Design House original</p>
+                <h3>Premium men&apos;s shirts, built from experience.</h3>
+                <p>
+                  Bluefort is our flagship men&apos;s shirt brand — bringing
+                  together refined styling, dependable quality and decades of
+                  apparel expertise.
+                </p>
+              </div>
+
+              <a className="bluefort-link" href="#contact">
+                Partner with CDH <span>↗</span>
+              </a>
+            </article>
+          </div>
         </div>
       </section>
 
