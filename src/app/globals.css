@@ -5612,8 +5612,8 @@ body.is-loading {
 
 @media (max-width: 720px) {
   .final-home .retail-partner-logo {
-    height: 76px !important;
-    padding: 8px 12px !important;
+    height: 88px !important;
+    padding: 6px 8px !important;
   }
 
   .final-home .retail-partner-logo img,
@@ -5623,6 +5623,25 @@ body.is-loading {
   .final-home .retail-partner-card:nth-child(4) .retail-partner-logo img,
   .final-home .retail-partner-card:nth-child(5) .retail-partner-logo img,
   .final-home .retail-partner-card:nth-child(6) .retail-partner-logo img {
-    max-height: 48px !important;
+    max-height: 60px !important;
+  }
+
+  .final-home .retail-partner-card:nth-child(1) .retail-partner-logo img {
+    max-width: 78% !important;
+  }
+
+  .final-home .retail-partner-card:nth-child(2) .retail-partner-logo img {
+    max-width: 58% !important;
+  }
+
+  .final-home .retail-partner-card:nth-child(3) .retail-partner-logo img,
+  .final-home .retail-partner-card:nth-child(4) .retail-partner-logo img,
+  .final-home .retail-partner-card:nth-child(5) .retail-partner-logo img {
+    max-width: 76% !important;
+  }
+
+  .final-home .retail-partner-card:nth-child(6) .retail-partner-logo img {
+    max-width: 46% !important;
+    max-height: 64px !important;
   }
 }
