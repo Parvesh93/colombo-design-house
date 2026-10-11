@@ -10,7 +10,7 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "Colombo Design House",
   description:
-    "Colombo Design House — a modern, professional digital presence for the company and its services.",
+    "Colombo Design House is a Sri Lankan shirt manufacturer offering formal, casual and ladies' shirts, flexible production and low MOQ garment manufacturing.",
 };
 
 export default function RootLayout({
