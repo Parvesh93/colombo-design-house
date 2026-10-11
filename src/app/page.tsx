@@ -289,7 +289,7 @@ export default function Home() {
       </header>
 
       <section id="home" className="final-hero">
-        <video className="final-hero-video" autoPlay muted loop playsInline preload="metadata">
+        <video className="final-hero-video" autoPlay muted playsInline preload="metadata" data-start-time="11">
           <source src={HERO_VIDEO} type="video/mp4" />
         </video>
         <div className="final-hero-shade" />
