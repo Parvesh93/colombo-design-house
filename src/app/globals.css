@@ -5730,3 +5730,16 @@ body.is-loading {
     max-height: 70px !important;
   }
 }
+
+
+/* ---- Desktop about image framing fix ---- */
+@media (min-width: 981px) {
+  .final-home .final-about-media {
+    min-height: 640px;
+  }
+
+  .final-home .final-about-media img {
+    object-fit: cover !important;
+    object-position: center 20% !important;
+  }
+}
