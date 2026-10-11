@@ -85,7 +85,7 @@ const retailPartners = [
     logo: "/partners/house-of-fashion_1.png",
   },
   {
-    name: "Thilakawardana",
+    name: "Thilakawardhana",
     logo: "/partners/thilakawardhana_1.jpeg",
   },
 ];
