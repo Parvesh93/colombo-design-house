@@ -63,8 +63,41 @@ export default function SiteEnhancements() {
 
     elements.forEach((element) => observer.observe(element));
 
+    const heroVideo = document.querySelector<HTMLVideoElement>(
+      ".final-hero-video[data-start-time]"
+    );
+
+    const heroStartTime = heroVideo
+      ? Number(heroVideo.dataset.startTime || "0")
+      : 0;
+
+    const setHeroStartTime = () => {
+      if (!heroVideo || !Number.isFinite(heroStartTime)) return;
+      heroVideo.currentTime = heroStartTime;
+    };
+
+    const loopHeroFromStartTime = () => {
+      if (!heroVideo) return;
+      heroVideo.currentTime = heroStartTime;
+      void heroVideo.play();
+    };
+
+    if (heroVideo) {
+      if (heroVideo.readyState >= 1) {
+        setHeroStartTime();
+      } else {
+        heroVideo.addEventListener("loadedmetadata", setHeroStartTime, { once: true });
+      }
+
+      heroVideo.addEventListener("ended", loopHeroFromStartTime);
+    }
+
     return () => {
       observer.disconnect();
+      if (heroVideo) {
+        heroVideo.removeEventListener("loadedmetadata", setHeroStartTime);
+        heroVideo.removeEventListener("ended", loopHeroFromStartTime);
+      }
       if (leaveTimer) clearTimeout(leaveTimer);
       if (removeTimer) clearTimeout(removeTimer);
       root.classList.remove("reveal-enabled", "preloader-active");
