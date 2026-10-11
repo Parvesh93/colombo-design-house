@@ -5743,3 +5743,11 @@ body.is-loading {
     object-position: center 20% !important;
   }
 }
+
+
+/* ---- Keep Our People heading static ---- */
+.final-home .final-people-heading {
+  position: static !important;
+  top: auto !important;
+  transform: none;
+}
