@@ -1,7 +1,7 @@
 import Image from "next/image";
 import SiteEnhancements from "@/components/SiteEnhancements";
 
-const HERO_VIDEO = "/hero-video/IMG_3192.M4V";
+const HERO_VIDEO = "/hero-video/IMG_3192.MP4";
 const IMAGE_FACTORY = "/images/IMG_5711.JPG.jpeg";
 const IMAGE_CRAFT = "/images/IMG_5707.JPG.jpeg";
 const IMAGE_MENSWEAR = "/images/IMG_5725.JPG.jpeg";
