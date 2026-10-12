@@ -22,12 +22,12 @@ const capabilities = [
   {
     title: "Ladies Wear",
     description: "Quality garments with contemporary appeal.",
-    image: "/images/IMG_5720_1.jpeg",
+    image: "/images/womens-shirt.jpg",
   },
   {
     title: "Undergarments",
     description: "Reliable everyday essentials.",
-    image: "/images/undergarments.jpg",
+    image: "/images/undergarments-2.jpg",
   },
 ];
 
