@@ -5371,11 +5371,14 @@ body.is-loading {
   .final-home .bluefort-logo-wrap {
     min-height: 105px;
     margin: 24px 0;
+    justify-content: center;
   }
 
   .final-home .bluefort-logo-wrap img {
-    width: min(88%, 320px);
-    max-height: 100px;
+    width: min(72%, 260px);
+    max-height: 82px;
+    margin: 0 auto;
+    object-position: center;
   }
 
   .final-home .bluefort-card-copy h3 {
