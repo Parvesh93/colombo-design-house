@@ -27,7 +27,7 @@ const capabilities = [
   {
     title: "Undergarments",
     description: "Reliable everyday essentials.",
-    image: "/images/undergarments-2.jpg",
+    image: "/images/undergarments-3.jpg",
   },
 ];
 
