@@ -761,7 +761,7 @@ export default function Home() {
 
               <div className="bluefort-logo-wrap">
                 <Image
-                  src="/brands/logo-bluefort.png"
+                  src="/brands/bluefort-black-logo.png"
                   alt="Bluefort"
                   width={420}
                   height={180}
